@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Club.m.App</title>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css" /> <!-- our css -->
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" /> <!-- css for leaflet maps -->
+	<!-- all the scripts -->
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> <!-- JS for leaflet maps -->
+	
+	
+</head>
+<body>
+	<div id="map"></div>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> <!-- JS for leaflet maps -->
+	<script>
+				
+		var techno = new L.LayerGroup();
+		
+		L.marker([52.500947, 13.428208]).bindPopup("<b>Name: 60 Hertz<br>Adresse: Waldemarstr. 108<br>Genre: House<br>Eintritt: 10+ Euro<br>Web: www.60hz.berlin").addTo(techno),
+	    L.marker([52.502447, 13.466467]).bindPopup("<b>Name: ://about blank<br>Adresse: Markgrafendamm 24<br>Genre: Techno<br>Eintritt: 10+ Euro<br>Web: www.aboutparty.net").addTo(techno),
+		L.marker([52.497437, 13.453939]).bindPopup("<b>Name: Arena Club<br>Adresse: Eichenstr. 4<br>Genre: Techno<br>Eintritt: 10+ Euro<br>Web: www.arena-berlin.de").addTo(techno),
+		L.marker([52.502626, 13.448149]).bindPopup("<b>Name: Ava Club<br>Adresse: Warschauerplatz 18<br>Genre: House<br>Eintritt: 5-10 Euro<br>Web: www.club-ava-berlin.de").addTo(techno),
+		L.marker([52.519690, 13.422541]).bindPopup("<b>Name: AVENUE Club<br>Adresse: Karl-Marx-Allee 34<br>Genre: House<br>Eintritt: 10+ Euro<br>Web: www.avenue-berlin.com").addTo(techno),
+		L.marker([52.517453, 13.419219]).bindPopup("<b>Name: Beate Uwe<br>Adresse: Schillingstr. 31<br>Genre: Electro/Gemischt<br>Eintritt: 5-10 Euro<br>Web: www.beate-uwe.de").addTo(techno),
+		L.marker([52.511072, 13.443012]).bindPopup("<b>Name: Berghain/Panorama Bar<br>Adresse: Am Wriezener Bahnhof<br>Genre: Techno<br>Eintritt: 10+ Euro<br>Web: www.berghain.de").addTo(techno),
+		L.marker([52.490884, 13.435948]).bindPopup("<b>Name: Bertrams<br>Adresse: Maybachufer 48<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.facebook.com/bertramsberlin").addTo(techno),
+		L.marker([52.541475, 13.394125]).bindPopup("<b>Name: Brunnen 70<br>Adresse: Brunnenstr. 70<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.brunnen70.de").addTo(techno),
+		L.marker([52.497180, 13.449344]).bindPopup("<b>Name: Chalet<br>Adresse: Vor dem Schlesischen Tor 3<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: chalet-berlin.de").addTo(techno),
+		L.marker([52.496751, 13.450420]).bindPopup("<b>Name: Club der Visionäre<br>Adresse: Am Flutgraben 1<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.clubdervisionaere.com").addTo(techno),
+		L.marker([52.529992, 13.400716]).bindPopup("<b>Name: Comsic Kaspar<br>Adresse: Brunnenstr. 197-198<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.facebook.com/CosmicKaspar").addTo(techno),
+		L.marker([52.507613, 13.454731]).bindPopup("<b>Name: Crack Bellmer<br>Adresse: Revaler Str. 99 (RAW)<br>Genre: House<br>Eintritt: 0-5 Euro<br>Web: www.facebook.com/CrackBellmer").addTo(techno),
+		L.marker([52.515688, 13.525282]).bindPopup("<b>Name: Czar Hagestolz<br>Adresse: Marzahner Chausee 51<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.czar-hagestolz.de").addTo(techno),
+		L.marker([52.495075, 13.462537]).bindPopup("<b>Name: Else Club (Only Summer)<br>Adresse: An den Treptowers 10<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.else.tv").addTo(techno),
+		L.marker([52.499328, 13.424250]).bindPopup("<b>Name: Farbfernseher<br>Adresse: Skalitzer Str. 114<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.farb-fernseher.de").addTo(techno),
+		L.marker([52.505290, 13.433667]).bindPopup("<b>Name: Fiesere Miese<br>Adresse: Köpenicker Str.<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.facebook.com/fiese.remise").addTo(techno),
+		L.marker([52.462297, 13.511712]).bindPopup("<b>Name: Funkloch<br>Adresse: Wilhelminenhofstr. 89<br>Genre: House<br>Eintritt: 5-10 Euro<br>Web: www.facebook.com/pages/Funkloch").addTo(techno),
+		L.marker([52.496050, 13.387761]).bindPopup("<b>Name: Gretchen<br>Adresse: Obentrautstr. 19-21<br>Genre: Techno<br>Eintritt: 10+ Euro<br>Web: www.gretchen-club.de").addTo(techno),
+		L.marker([52.516177, 13.416693]).bindPopup("<b>Name: Golden Gate<br>Adresse: Schicklerstr. 6<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.goldengate-berlin.de").addTo(techno),
+		L.marker([52.475446, 13.457337]).bindPopup("<b>Name: Griessmühle<br>Adresse: Sonnenallee 221<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.griessmuehle.de").addTo(techno),
+		L.marker([52.540368, 13.330375]).bindPopup("<b>Name: Heideglühen<br>Adresse: Seestr. 2<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.facebook.com/heidegluehen").addTo(techno),
+		L.marker([52.544346, 13.378724]).bindPopup("<b>Name: Humboldthain Club<br>Adresse: Hochstr. 46<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.humboldthain.com/site").addTo(techno),
+	    L.marker([52.520682, 13.388411]).bindPopup("<b>Name: Imperial Club<br>Adresse: Friedrichstr. 101<br>Genre: House/Gemischt<br>Eintritt: 10 Euro<br>Web: www.imperial-berlin.de").addTo(techno),
+		L.marker([52.496972, 13.449742]).bindPopup("<b>Name: IPSE<br>Adresse: Vor dem Schlesischen Tor 2b<br>Genre: House<br>Eintritt: 5-10 Euro<br>Web: www.facebook.com/ipse.offline").addTo(techno),
+		L.marker([52.497948, 13.450108]).bindPopup("<b>Name: Johnny Knüppel<br>Adresse: Schleusenufer 4<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.jonnyknüppel.de").addTo(techno),
+		L.marker([52.511281, 13.444102]).bindPopup("<b>Name: Kantine am Berghain<br>Adresse: Am Wriezener Bahnhof<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.berghain.de").addTo(techno),
+		L.marker([52.511561, 13.426801]).bindPopup("<b>Name: Kater Blau<br>Adresse: Holzmarktstr. 25<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.katerblau.de").addTo(techno),
+		L.marker([52.511050, 13.416775]).bindPopup("<b>Name: Kit Kat Club<br>Adresse: Köpenicker Str. 76<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.kitkatclub.org/Home/Index.html").addTo(techno),
+		L.marker([52.481967, 13.432707]).bindPopup("<b>Name: Klunkerkranich<br>Adresse: Parkdeck Neukölln Arcaden<br>Genre: Electro/Gemischt<br>Eintritt: 0-5 Euro<br>Web: www.facebook.com/derklunkerkranich").addTo(techno),
+		L.marker([52.511126, 13.396624]).bindPopup("<b>Name: Konzulat<br>Adresse: Leipziger Str. 60<br>Genre: House<br>Eintritt: 10 Euro<br>Web: ---").addTo(techno),
+		L.marker([52.507787, 13.474861]).bindPopup("<b>Name: Kosmonaut Club<br>Adresse: Wiesenweg 1-4<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.facebook.com/hello.kosmonaut").addTo(techno),
+		L.marker([52.482802, 13.431179]).bindPopup("<b>Name: Kultstätte Keller<br>Adresse: Karl-Marx-Str. 52<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.facebook.com/kultstaettekeller").addTo(techno),
+		L.marker([52.507787, 13.474861]).bindPopup("<b>Name: Kosmonaut Club<br>Adresse: Wiesenweg 1-4<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.facebook.com/hello.kosmonaut").addTo(techno),
+		L.marker([52.511732, 13.422656]).bindPopup("<b>Name: Lichtpark (Only Summer)<br>Adresse: Michaelkirchstraße 22/23<br>Genre: Techno<br>Eintritt: 0-5 Euro Euro<br>Web: www.lichtpark.org").addTo(techno),
+		L.marker([52.490864, 13.435820]).bindPopup("<b>Name: Loftus Hall<br>Adresse: Maybachufer 48<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.loftushall.de").addTo(techno),
+		L.marker([52.522772, 13.409664]).bindPopup("<b>Name: M-Bia<br>Adresse: Dircksenstr. 123/ Ecke Karl-Liebknechtstr.<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.m-bia.de/CMS").addTo(techno),
+		L.marker([52.535526, 13.451756]).bindPopup("<b>Name: Mensch Meier<br>Adresse: Storkower Str. 121<br>Genre: Techno<br>Eintritt: 0-10 Euro<br>Web: www.menschmeier.berlin").addTo(techno),
+		L.marker([52.523740, 13.401341]).bindPopup("<b>Name: N3 Club<br>Adresse: Oranienburger Str. 4<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.facebook.com/ndrei.club").addTo(techno),
+		L.marker([52.510459, 13.418716]).bindPopup("<b>Name: OHM<br>Adresse: Köpenicker Str. 70<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.facebook.com/shiftberlin").addTo(techno),
+		L.marker([52.545464, 13.416757]).bindPopup("<b>Name: PhonoClub<br>Adresse: Pappelallee 65<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.phonoclub-berlin.de").addTo(techno),
+		L.marker([52.502591, 13.409604]).bindPopup("<b>Name: Prince Charles<br>Adresse: Prinzenstr. 85F<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.princecharlesberlin.com").addTo(techno),
+		L.marker([52.475647, 13.422136]).bindPopup("<b>Name: Promenadeneck<b><br>Adresse: Schillerpromenade 11<br>Genre: Techno<br>Eintritt: 0-5 Euro<br>Web: www.facebook.com/Schillerpromenade11").addTo(techno),
+		L.marker([52.506382, 13.460165]).bindPopup("<b>Name: R19<br>Adresse: Revaler Str. 19<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.facebook.com/R19ClubBerlin").addTo(techno),
+		L.marker([52.510031, 13.454934]).bindPopup("<b>Name: Raumklang<br>Adresse: Libauer Str. 1<br>Genre: Techno<br>Eintritt: 0-5 Euro<br>Web: www.raum-klang.de").addTo(techno),
+		L.marker([52.507780, 13.454297]).bindPopup("<b>Name: RAW Tempel<br>Adresse: Revaler Str. 99<br>Genre: Electro/Gemischt<br>Eintritt: 0-10 Euro<br>Web: www.facebook.com/rawtempelclub").addTo(techno),
+		L.marker([52.502652, 13.407835]).bindPopup("<b>Name: Ritter Butzke<br>Adresse: Ritterstr. 26<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.ritterbutzke.de").addTo(techno),
+		L.marker([52.505033, 13.462439]).bindPopup("<b>Name: Rosis<br>Adresse: Revaler Str. 29<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.rosis-berlin.de").addTo(techno),
+		L.marker([52.500677, 13.472427]).bindPopup("<b>Name: Rummelsbucht<br>Adresse: Paul und Paula-Ufer<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.rummels-welt.de").addTo(techno),
+		L.marker([52.482080, 13.501837]).bindPopup("<b>Name: Rummelsburg (Only Summer)<br>Adresse: Rummelsburger Landstraße 2-12<br>Genre: Techno<br>Eintritt: 10+ Euro<br>Web: www.rummelsburg-berlin.de").addTo(techno),
+		L.marker([52.479513, 13.433459]).bindPopup("<b>Name: SchwuZ<br>Adresse: Rollbergstr. 26<br>Genre: Techno/Gay<br>Eintritt: 10 Euro<br>Web: www.schwuz.de").addTo(techno),
+		L.marker([52.493200, 13.491994]).bindPopup("<b>Name: Sisyphos<br>Adresse: Hauptstrasse 15<br>Genre: Techno<br>Eintritt: 10+ Euro<br>Web: www.sisyphos-berlin.net").addTo(techno),
+		L.marker([52.543856, 13.372748]).bindPopup("<b>Name: Stattbad Wedding<br>Adresse: Gerichtstr. 65<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.stattbad.net").addTo(techno),
+		L.marker([52.507592, 13.475858]).bindPopup("<b>Name: Subland<br>Adresse: Wiesenweg 5<br>Genre: Techno<br>Eintritt: 5-10 Euro<br>Web: www.facebook.com/sublandclub").addTo(techno),
+		L.marker([52.497424, 13.465289]).bindPopup("<b>Name: Salon zur wilden Renate<br>Adresse: Alt-Stralau 70<br>Genre: Techno<br>Eintritt: 10+ Euro<br>Web: www.renate.cc").addTo(techno),
+		L.marker([52.507268, 13.450839]).bindPopup("<b>Name: Suicide Circus<br>Adresse: Revaler Str. 99<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.suicide-berlin.com").addTo(techno),
+		L.marker([52.510814, 13.419929]).bindPopup("<b>Name: Tresor<br>Adresse: Köpenicker Str. 70<br>Genre: Techno<br>Eintritt: 10 Euro<br>Web: www.tresorberlin.com").addTo(techno),
+		L.marker([52.500953, 13.445013]).bindPopup("<b>Name: Watergate<br>Adresse: Falckensteinstr. 49<br>Genre: Techno<br>Eintritt: 10+ Euro<br>Web: www.water-gate.de").addTo(techno);
+		
+		var rock = new L.LayerGroup();
+		
+		L.marker([52.507231, 13.451797]).bindPopup("<b>Name: Astra Kulturhaus<br>Adresse: Revaler Str. 99<br>Genre: Indie/Gemischt/Live<br>Eintritt: 5-10 Euro<br>Web: www.astra-berlin.de").addTo(rock),
+	    L.marker([52.490798, 13.387216]).bindPopup("<b>Name: Bang Bang Club<br>Adresse: Mehringdamm 61<br>Genre: Indie/Gemischt/Live<br>Eintritt: 5-10 Euro<br>Web: www.facebook.com/bangbangclubberlin").addTo(rock),
+		L.marker([52.531737, 13.411722]).bindPopup("<b>Name: Bassy<br>Adresse: Schönhauser Allee 176a<br>Genre: Indie/Sixties/Gemischt<br>Eintritt: 5-10 Euro<br>Web: www.bassyclub.com").addTo(rock),
+		L.marker([52.500695, 13.441430]).bindPopup("<b>Name: Bi Nuu<br>Adresse: U-Bhf. Schlesisches Tor<br>Genre: Punk/Hip Hop/Gemischt<br>Eintritt: 5-10 Euro<br>Web: www.binuu.de").addTo(rock),
+		L.marker([52.539817, 13.436080]).bindPopup("<b>Name: Blackland<br>Adresse: Lilli-Hennoch-Str. 1<br>Genre: Punk/Hardcore/Dark<br>Eintritt: 5-10 Euro<br>Web: www.blackland.eu").addTo(rock),
+		L.marker([52.494649, 13.438363]).bindPopup("<b>Name: Chesters<br>Adresse: Glogauer Str. 2<br>Genre: Jazz/Blues/Live<br>Eintritt: 5-10 Euro<br>Web: www.chestersberlin.tumblr.com").addTo(rock),
+		L.marker([52.500700, 13.444795]).bindPopup("<b>Name: Comet<br>Adresse: Falckensteinstr. 47<br>Genre: Indie/Rock Alternative<br>Eintritt: 5-10 Euro<br>Web: www.facebook.com/cometclubcometclub").addTo(rock),
+		L.marker([52.546392, 13.424208]).bindPopup("<b>Name: Duncker<br>Adresse: Duncker Str. 64<br>Genre: Indie/Rock/New Wave<br>Eintritt: 5-10 Euro<br>Web: www.dunckerclub.de").addTo(rock),
+		L.marker([52.509244, 13.435796]).bindPopup("<b>Name: Fritz Club<br>Adresse: Strasse der Pariser Kommune 8<br>Genre: Rock/Hip Hop/Gemischt<br>Eintritt: 5-10 Euro<br>Web: www.fritzclub.com").addTo(rock),
+		L.marker([52.527071, 13.412301]).bindPopup("<b>Name: Grüner Salon<br>Adresse: Rosa-Luxemburg-Platz 2<br>Genre: Swing/Sixties/Live<br>Eintritt: 5-10 Euro<br>Web: www.gruener-salon.de/highlights/").addTo(rock),
+		L.marker([52.541140, 13.412736]).bindPopup("<b>Name: Horns & Hooves<br>Adresse: Danziger Str. 1<br>Genre: Burlesque/Live<br>Eintritt: 5-10 Euro<br>Web: www.hornsandhooves.de/de").addTo(rock),
+		L.marker([52.517979, 13.471755]).bindPopup("<b>Name: K17<br>Adresse: Pettenkoferstr. 17a<br>Genre: Metal/Goth<br>Eintritt: 5-10 Euro<br>Web: www.k17-berlin.de").addTo(rock),
+		L.marker([52.528778, 13.408524]).bindPopup("<b>Name: Kaffee Burger<br>Adresse: Torstr. 60<br>Genre: Gemischt<br>Eintritt: 5 Euro<br>Web: www.kaffeeburger.de").addTo(rock),
+		L.marker([52.512336, 13.460896]).bindPopup("<b>Name: Knochenbox<br>Adresse: Boxhagener Str. 99<br>Genre: Rock/Punk/Gemischt<br>Eintritt: 0-5 Euro<br>Web: www.facebook.com/Knochenbox").addTo(rock),
+		L.marker([52.499226, 13.445247]).bindPopup("<b>Name: LIDO<br>Adresse: Cuvrystr. 7<br>Genre: Indie/Rock/Live<br>Eintritt: 5-10 Euro<br>Web: www.lido-berlin.de").addTo(rock),
+		L.marker([52.500281, 13.443592]).bindPopup("<b>Name: L.U.X.<br>Adresse: Schlesische Str. 41<br>Genre: Rock/Hip Hop<br>Eintritt: 0-10 Euro<br>Web: www.facebook.com/leisesteunterhaltungxberg.lux").addTo(rock),
+		L.marker([52.500836, 13.444836]).bindPopup("<b>Name: Magnet<br>Adresse: Falckensteinstr. 48<br>Genre: Indie/Rock<br>Eintritt: 5-10 Euro<br>Web: www.magnet-club.de").addTo(rock),
+		L.marker([52.500140, 13.434764]).bindPopup("<b>Name: Privatclub<br>Adresse: Skalitzer Str. 85<br>Genre: Indie/Rock<br>Eintritt: 5-10 Euro<br>Web: www.privatclub-berlin.de").addTo(rock),		
+		L.marker([52.530582, 13.413484]).bindPopup("<b>Name: Roadrunners<br>Adresse: Saarbrücker Str. 24<br>Genre: Indie/Rock<br>Eintritt: 5-10 Euro<br>Web: www.roadrunners-paradise.de").addTo(rock),
+		L.marker([52.527227, 13.411660]).bindPopup("<b>Name: Roter Salon<br>Adresse: Rosa-Luxemburg-Platz 1<br>Genre: Indie/Rock<br>Eintritt: 5-10 Euro<br>Web: www.roter-salon-berlin.de").addTo(rock),
+		L.marker([52.511050, 13.416775]).bindPopup("<b>Name: Sage Club<br>Adresse: Köpenicker Str. 76<br>Genre: Indie/Rock<br>Eintritt: 5-10 Euro<br>Web: www.sage-club.de/wp/").addTo(rock),
+		L.marker([52.483542, 13.390192]).bindPopup("<b>Name: Silverwings<br>Adresse: Columbiadamm 10, Bauteil F2 Flughafen Tempelhof<br>Genre: Rock'n'Roll<br>Eintritt: 5-10 Euro<br>Web: www.silverwings.de").addTo(rock),
+		L.marker([52.500402, 13.422137]).bindPopup("<b>Name: SO 36<br>Adresse: Oranienstr. 190<br>Genre: Indie/Rock/Gemischt<br>Eintritt: 5-10 Euro<br>Web: www.so36.de").addTo(rock),
+		L.marker([52.497613, 13.431059]).bindPopup("<b>Name: Wild at Heart<br>Adresse: Wiener Str. 20<br>Genre: Indie/Rock<br>Eintritt: 5-10 Euro<br>Web: www.wildatheartberlin.de").addTo(rock);
+	  
+		var black = new L.LayerGroup();
+	  
+		L.marker([52.517788, 13.412070]).bindPopup("<b>Name: 2BE Club<br>Adresse: Klosterstr. 44<br>Genre: Hip Hop/Live<br>Eintritt: 5-10 Euro<br>Web: www.2be-club.de").addTo(black),
+		L.marker([52.502380, 13.431043]).bindPopup("<b>Name: Auster Club<br>Adresse: Pücklerstr. 34<br>Genre: Gemischt<br>Eintritt: 5-10 Euro<br>Web: www.auster-club.com").addTo(black),
+		L.marker([52.523700, 13.407501]).bindPopup("<b>Name: Bohannon<br>Adresse: Dircksenstr.40<br>Genre: Soul/Reggae/Hip Hop<br>Eintritt: 5-10 Euro<br>Web: www.bohannon.de").addTo(black),
+		L.marker([52.507169, 13.454678]).bindPopup("<b>Name: Cassiopaia<br>Adresse: Revaler Str. 99<br>Genre: Gemischt<br>Eintritt: 5-10 Euro<br>Web: www.cassiopeia-berlin.de").addTo(black),
+		L.marker([52.502717, 13.407577]).bindPopup("<b>Name: St. Georg<br>Adresse: Ritterstr. 26<br>Genre: Gemischt<br>Eintritt: 5-10 Euro<br>Web: www.stgeorg-berlin.com").addTo(black),
+		L.marker([52.505673, 13.434827]).bindPopup("<b>Name: Spindler & Klatt<br>Adresse: Köpenicker Str. 16-17<br>Genre: Black<br>Eintritt: 10 Euro<br>Web: www.spindlerklatt.com").addTo(black),
+		L.marker([52.509303, 13.430213]).bindPopup("<b>Name: Yaam<br>Adresse: An der Schillingbrücke 3<br>Genre: Reggae/Dancehall<br>Eintritt: 5-10 Euro<br>Web: www.yaam.de").addTo(black);
+		
+		var misc = new L.LayerGroup();
+		
+		L.marker([52.505357, 13.367469]).bindPopup("<b>Name: 40seconds<br>Adresse: Potsdamer Str. 58<br>Genre: Mainstream/Commercial<br>Eintritt: 10+ Euro<br>Web: www.40seconds.de/club/start/").addTo(misc),
+		L.marker([52.498838, 13.342404]).bindPopup("<b>Name: Connection<br>Adresse: Fuggerstr. 83<br>Genre: Mainstream/Commercial<br>Eintritt: 10 Euro<br>Web: www.connectionclub.de").addTo(misc),
+		L.marker([52.503142, 13.447826]).bindPopup("<b>Name: Die Busche<br>Adresse: Warschauer Platz 18<br>Genre: Mainstream/Commercial<br>Eintritt: 0-10 Euro<br>Web: www.diebusche.de").addTo(misc),
+		L.marker([52.514778, 13.379449]).bindPopup("<b>Name: Felix<br>Adresse: Behrenstr. 72<br>Genre: Mainstream/Commercial<br>Eintritt: 15+ Euro<br>Web: www.felix-clubrestaurant.de/home").addTo(misc),
+		L.marker([52.502017, 13.330739]).bindPopup("<b>Name: Q-Dorf<br>Adresse: Joachimsthaler Str. 15<br>Genre: Mainstream/Commercial<br>Eintritt: 10 Euro<br>Web: www.qdorfberlin.de").addTo(misc),
+		L.marker([52.522839, 13.416532]).bindPopup("<b>Name: Sky Club / Weekend<br>Adresse: Alexander Str. 7<br>Genre: Mainstream/Commercial<br>Eintritt: 10 Euro<br>Web: www.skyclubberlin.de / www.houseofweekend.berlin").addTo(misc),
+		L.marker([52.505082, 13.449051]).bindPopup("<b>Name: Matrix<br>Adresse: Warschauer Platz 18<br>Genre: Mainstream/Commercial<br>Eintritt: 10 Euro<br>Web: www.matrix-berlin.de").addTo(misc);
+	  
+	  
+	  
+	  var map = L.map('map', {
+      'center': [52.513, 13.393],
+      'zoom': 12
+    });
+
+		var tileLayer = L.tileLayer('https://{s}.tiles.mapbox.com/v4/{mapId}/{z}/{x}/{y}.png?access_token={token}', {
+	    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+	    subdomains: ['a','b','c','d'],
+	    mapId: 'pippo87.li15ibp4',
+	    token: 'pk.eyJ1IjoicGlwcG84NyIsImEiOiJtdEhldHNZIn0.ux6Eo5bn_ErK7zqZL0khfQ'
+		});
+		tileLayer.addTo(map);
+		
+		var tileLayer2 = L.tileLayer('https://{s}.tiles.mapbox.com/v4/{mapId}/{z}/{x}/{y}.png?access_token={token}', {
+	    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+	    subdomains: ['a','b','c','d'],
+	    mapId: 'pippo87.ll2a2dkc',
+	    token: 'pk.eyJ1IjoicGlwcG84NyIsImEiOiJtdEhldHNZIn0.ux6Eo5bn_ErK7zqZL0khfQ'
+		});
+		tileLayer.addTo(map);
+		
+		function onLocationFound(e) {
+			 var radius = parseInt( e.accuracy / 2);
+
+			L.marker(e.latlng).addTo(map)
+				.bindPopup("You are within " + radius + " meters from this point").openPopup();
+				
+
+			L.circle(e.latlng, radius).addTo(map);
+			}
+
+			function onLocationError(e) {
+			alert(e.message);
+			}
+
+			map.on('locationfound', onLocationFound);
+			map.on('locationerror', onLocationError);
+
+			map.locate({setView: true, maxZoom: 16});
+			
+		var baseLayers = {
+			"Nightmap": tileLayer,
+			"Classic": tileLayer2,
+			};
+
+		var overlays = {
+			"Techno": techno,
+			"Black": black,
+			"Rock": rock,
+			"Commercial": misc,
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+
+	</script>
+
+	
+	
+</body>
+</html>
